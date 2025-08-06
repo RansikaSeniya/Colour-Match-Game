@@ -131,6 +131,15 @@ body {
     animation: shake 0.5s ease-in-out;
 }
 
+.timer-penalty {
+    animation: timerFlash 0.5s ease-in-out;
+}
+
+@keyframes timerFlash {
+    0%, 100% { background-color: transparent; }
+    50% { background-color: rgba(244, 67, 54, 0.3); }
+}
+
 @keyframes shake {
     0%, 100% { transform: translateX(0); }
     25% { transform: translateX(-5px); }
@@ -207,6 +216,14 @@ body {
     font-size: 1.2rem;
     margin-bottom: 10px;
     color: #666;
+}
+
+#final-score-message {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .hidden {
