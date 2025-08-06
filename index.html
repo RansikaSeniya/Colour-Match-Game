@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Match Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1>🎨 Color Match</h1>
+            <div class="score-board">
+                <div class="score-item">
+                    <span class="label">Score:</span>
+                    <span id="score">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="label">Level:</span>
+                    <span id="level">1</span>
+                </div>
+                <div class="score-item">
+                    <span class="label">Time:</span>
+                    <span id="timer">30</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="game-area">
+            <div class="target-section">
+                <h2>Find this color:</h2>
+                <div id="target-color" class="target-color"></div>
+            </div>
+
+            <div class="grid-container">
+                <div id="game-grid" class="game-grid"></div>
+            </div>
+
+            <div class="controls">
+                <button id="start-btn" class="btn btn-primary">Start Game</button>
+                <button id="reset-btn" class="btn btn-secondary">Reset</button>
+            </div>
+        </div>
+
+        <div id="game-over" class="game-over hidden">
+            <div class="game-over-content">
+                <h2>Game Over!</h2>
+                <p>Final Score: <span id="final-score">0</span></p>
+                <p>Level Reached: <span id="final-level">1</span></p>
+                <button id="play-again-btn" class="btn btn-primary">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
